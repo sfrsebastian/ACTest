@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveCardsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xRm-59-zyf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CL-YW-ATn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="318.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNo-bq-Cp0">
+                                                <rect key="frame" x="20" y="20" width="335" height="278.5"/>
+                                                <color key="backgroundColor" red="1" green="0.79739861420000002" blue="0.37485504510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="WNo-bq-Cp0" secondAttribute="trailing" constant="20" id="BX0-0d-QmR"/>
+                                            <constraint firstItem="WNo-bq-Cp0" firstAttribute="top" secondItem="7CL-YW-ATn" secondAttribute="top" constant="20" id="IRw-f7-n8m"/>
+                                            <constraint firstAttribute="bottom" secondItem="WNo-bq-Cp0" secondAttribute="bottom" constant="20" id="TdH-dB-WBg"/>
+                                            <constraint firstItem="WNo-bq-Cp0" firstAttribute="leading" secondItem="7CL-YW-ATn" secondAttribute="leading" constant="20" id="iDf-6o-OJZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Uc-9h-jCR">
+                                        <rect key="frame" x="0.0" y="328.5" width="375" height="318.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8g-2l-R1j">
+                                                <rect key="frame" x="20" y="20" width="335" height="278.5"/>
+                                                <color key="backgroundColor" red="1" green="0.20649369479999999" blue="0.25690855480000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Y8g-2l-R1j" secondAttribute="trailing" constant="20" id="Vql-Cb-C2w"/>
+                                            <constraint firstAttribute="bottom" secondItem="Y8g-2l-R1j" secondAttribute="bottom" constant="20" id="YU4-qH-V2o"/>
+                                            <constraint firstItem="Y8g-2l-R1j" firstAttribute="leading" secondItem="0Uc-9h-jCR" secondAttribute="leading" constant="20" id="xfT-Qi-pKH"/>
+                                            <constraint firstItem="Y8g-2l-R1j" firstAttribute="top" secondItem="0Uc-9h-jCR" secondAttribute="top" constant="20" id="xtP-3P-CAM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xRm-59-zyf" secondAttribute="bottom" id="5XL-4Y-lQz"/>
+                            <constraint firstItem="xRm-59-zyf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Caq-ZJ-D4j"/>
+                            <constraint firstItem="xRm-59-zyf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tqb-3P-toY"/>
+                            <constraint firstAttribute="trailing" secondItem="xRm-59-zyf" secondAttribute="trailing" id="vpD-JY-9H9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardView" destination="WNo-bq-Cp0" id="xnE-02-g5A"/>
+                        <outlet property="cardView2" destination="Y8g-2l-R1j" id="xxm-jf-BWy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
